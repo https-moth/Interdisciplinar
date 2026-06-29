@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contato.css">
+  <title>Contato - Vintage Motors</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logotipo"> <img class="logo" src="img/Logo VM.png"> VINTAGE MOTORS</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="estoque.html">Garagem</a></li>
+        <li><a href="sobre.html">História</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html" id="active">Contato</a></li>
+      </ul>
+    </nav>
+    <a href="eventos.html" id="link-clube">
+      <div class="Clube">
+        <img class="clube-logo" src="img/Clube.png" alt="Clube Old Legends">
+        <div class="clube-texto">
+          <span>Seja membro do clube</span>
+          <b>Old Legends</b>
+        </div>
+      </div>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="contato-hero">
+      <div class="contato-hero-esq">
+        <span class="contato-eyebrow">✦ FALE CONOSCO ✦</span>
+        <h1>Entre em Contato</h1>
+        <p>Estamos à disposição para esclarecer dúvidas, agendar visitas e apresentar nossa coleção de clássicos. Nossa
+          equipe responde em até 24 horas.</p>
+      </div>
+      <div class="contato-hero-dir">
+        <img src="img/localizacao.jpg" alt="Vintage Motors">
+      </div>
+    </section>
+
+     <!-- BARRA DE INFORMAÇÕES -->
+    <section class="info-bar">
+      <div class="info-item">
+        <img class="info-icone" src="img/local.png" alt="Endereço">
+        <h3>Endereço</h3>
+        <p>Av. Nostalgia, 250 — Estocolmo</p>
+      </div>
+      <div class="info-item">
+        <img class="info-icone" src="img/telefone.png" alt="Telefone">
+        <h3>Telefone</h3>
+        <p>+55 (53) 9034-3378</p>
+      </div>
+      <div class="info-item">
+        <img class="info-icone" src="img/email.png" alt="E-mail">
+        <h3>E-mail</h3>
+        <p>info@vintagemotors.com</p>
+      </div>
+      <div class="info-item">
+        <img class="info-icone" src="img/relogio.png" alt="Horário">
+        <h3>Horário</h3>
+        <p>Seg – Sex, 8h às 19h</p>
+      </div>
+      <div class="info-item">
+        <img class="info-icone" src="img/mensagem.png" alt="WhatsApp">
+        <h3>WhatsApp</h3>
+        <p>Resposta imediata</p>
+      </div>
+    </section>
+
+    <!-- MAPA + FORMULÁRIO -->
+    <section class="contato-principal">
+
+      <!-- COLUNA ESQUERDA: mapa -->
+      <div class="contato-mapa">
+        <div class="mapa-header">
+          <h2>Nossa Localização</h2>
+          <p>Venha nos visitar e conhecer pessoalmente nossa coleção de clássicos.</p>
+        </div>
+        <div class="mapa-frame">
+          <iframe 
+            src="https://www.google.com/maps?q=G%C3%B6tgatan,+S%C3%B6dermalm,+Stockholm,+Sweden&output=embed"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Localização Vintage Motors">
+          </iframe>
+        </div>
+        <div class="mapa-endereco">
+          <p>📍 Av. Nostalgia, 250 — Estocolmo, SE</p>
+        </div>
+      </div>
+
+      <!-- COLUNA DIREITA: formulário -->
+      <div class="contato-form-col">
+
+        <div class="form-header">
+          <h2>Envie uma Mensagem</h2>
+          <p>Preencha o formulário abaixo e retornaremos o contato em breve.</p>
+        </div>
+
+        <form class="contato-form" id="contato-form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="" selected disabled>Selecione um assunto</option>
+              <option value="compra">Interesse em um veículo</option>
+              <option value="visita">Agendar visita</option>
+              <option value="restauracao">Restauração</option>
+              <option value="clube">Clube Old Legends</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
+              required></textarea>
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <h3>Vintage Motors</h3>
+      <p>Carros Clássicos</p>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <span><a href="https://www.facebook.com" target="_blank"><img class="logo" src="img/Facebook.png"
+            alt="Facebook"></a></span>
+      <span><a href="https://www.instagram.com" target="_blank"><img class="logo" src="img/Instagram.png"
+            alt="Instagram"></a></span>
+      <span><a href="https://www.youtube.com" target="_blank"><img class="logo" src="img/Youtube.png"
+            alt="Youtube"></a></span>
+      <span><a href="https://www.tiktok.com" target="_blank"><img class="logo" src="img/TikTok.png"
+            alt="Tiktok"></a></span>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>Info@vintagemotors.com</p>
+      <p>+55 (53) 9034-3378</p>
+      <p>Av. Nostalgia, 250 - Estocolmo, SE</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

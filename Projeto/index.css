@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #F0E7D5;
+  color: #111;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #F0E7D5;
+}
+
+.logotipo {
+  display: flex;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  font-family: 'Sulphur Point';
+  font-size: 22px;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  /* position: relative; */
+  text-decoration: none;
+  color: #111;
+  font-size: 15px;
+  font-family: 'Libre BaskerViller';
+}
+
+nav a:hover {
+  font-size: 16.5px;
+  color: #730203;
+  transition: 0.5s ease;
+}
+
+#active {
+  font-size: 16.5px;
+  color: #730203;
+  border-bottom: #730203 solid 1px;
+}
+
+/* CARD DO CLUBE */
+
+.Clube {
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: #11114E;
+
+  padding: 18px 22px;
+
+  border-radius: 0 0 18px 18px;
+
+  color: #F0E7D5;
+
+  width: max-content;
+  min-width: 250px;
+
+  align-self: flex-start;
+
+  margin-top: -20px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+}
+
+#link-clube {
+    text-decoration: none;
+}
+
+.clube-logo{
+
+    width:42px;
+    height:42px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+}
+
+.clube-texto{
+
+    display:flex;
+    flex-direction:column;
+
+    line-height:1.2;
+}
+
+.clube-texto span{
+
+    font-family:"Cinzel";
+    font-size:11px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    color:#F0E7D5;
+}
+
+.clube-texto b{
+
+    margin-top:4px;
+
+    color:#DAA520;
+
+    font-family:"Cinzel";
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 550px;
+  padding-left: 60px;
+  background: #111111;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: 'Castoro Titling';
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #ddd;
+  font-family: 'Cinzel';
+}
+
+.btn {
+
+
+    margin: 35px auto 0;
+
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #730203;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.btn:hover {
+
+    background: #520304;
+
+    transform: translateY(-2px);
+}
+
+.btn a {
+
+    text-decoration: none;
+    color: white;
+
+    font-family: "Cinzel";
+    font-size: .95rem;
+    letter-spacing: 1px;
+}
+
+.hero img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+
+
+  mask-image: linear-gradient(to right,
+      transparent 0%,
+      rgba(0, 0, 0, .15) 6%,
+      rgba(0, 0, 0, .45) 10%,
+      rgba(0, 0, 0, .8) 14%,
+      black 20%);
+
+  -webkit-mask-image: linear-gradient(to right,
+      transparent 0%,
+      rgba(0, 0, 0, .15) 6%,
+      rgba(0, 0, 0, .45) 10%,
+      rgba(0, 0, 0, .8) 14%,
+      black 20%);
+}
+
+/* ===========================
+   DESTAQUES
+=========================== */
+
+.section {
+    padding: 70px 60px;
+    background: #F5F1EA;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 45px;
+    letter-spacing: 3px;
+    font-family: "Castoro Titling";
+    color: #11114E;
+    font-size: 2rem;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    transition: .35s ease;
+    border: 1px solid rgba(114,75,57,.12);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+    border-color: rgba(218,165,32,.5);
+}
+
+/* ===========================
+   IMAGEM
+=========================== */
+
+.card img {
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+/* ===========================
+   TEXTO
+=========================== */
+
+.card h3 {
+    font-family: "Cinzel";
+    color: #242424;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    margin-bottom: 10px;
+    min-height: 65px;
+}
+
+.card p {
+    font-family: "Libre Baskerville";
+    color: #666;
+    font-size: .82rem;
+    line-height: 1.6;
+}
+
+/* ===========================
+   BOTÃO
+=========================== */
+
+.btn-stok {
+
+    display: block;
+
+    margin: 35px auto 0;
+
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #11114E;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.btn-stok:hover {
+
+    background: #030327;
+
+    transform: translateY(-2px);
+}
+
+.btn-stok a {
+
+    text-decoration: none;
+    color: white;
+
+    font-family: "Cinzel";
+    font-size: .95rem;
+    letter-spacing: 1px;
+}
+
+/* EVENTO */
+
+/* ===========================
+   EVENTOS
+=========================== */
+
+.evento{
+    background: #F5F1EA;
+}
+
+.container-evento{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.evento-filho{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 280px;
+
+    padding: 30px;
+
+    color: #F0E7D5;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+    border-style: solid;
+    border-color: #DAA520;
+    border-width: 2px 0.5px 0.5px 0px;
+}
+
+/* Cores dos cards */
+
+.evento-filho:nth-child(1){
+    background: #724B39;
+}
+
+.evento-filho:nth-child(2){
+    background: #9A0002;
+}
+
+.evento-filho:nth-child(3){
+    background: #11114E;
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+.evento-filho h3{
+    font-family: "Cinzel";
+    font-size: 1.45rem;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    color: #DAA520;
+}
+
+/* ===========================
+   TEXTO
+=========================== */
+
+.evento-filho p{
+    font-family: "Libre Baskerville";
+    font-size: .95rem;
+    line-height: 1.8;
+    color: #F0E7D5;
+    margin-bottom: 30px;
+}
+
+/* ===========================
+   BOTÃO
+=========================== */
+
+.evento-filho button{
+
+    align-self: flex-start;
+
+    padding: 12px 24px;
+
+    background: #11114E;
+
+    border: 1px solid #DAA520;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.evento-filho button:hover{
+
+    background: #DAA520;
+    transform: translateY(-2px);
+}
+
+.evento-filho button a{
+
+    text-decoration: none;
+
+    color: #F0E7D5;
+
+    font-family: "Cinzel";
+
+    font-size: .9rem;
+
+    letter-spacing: 1px;
+}
+
+.evento-filho button:hover a{
+
+    color: #11114E;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width: 900px){
+
+    .container-evento{
+        grid-template-columns: 1fr;
+    }
+
+    .evento-filho{
+        min-height: auto;
+    }
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background: #111111;
+    color: #F0E7D5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    gap: 50px;
+
+    padding: 45px 70px;
+
+    border-top: 3px solid #DAA520;
+}
+
+footer div {
+    flex: 1;
+    min-width: 220px;
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+footer h3,
+footer h4 {
+
+    font-family: "Cinzel";
+    font-weight: 700;
+
+    color: #DAA520;
+
+    margin-bottom: 18px;
+
+    letter-spacing: 1px;
+}
+
+footer h3{
+    font-size: 1.6rem;
+}
+
+footer h4{
+    font-size: 1.15rem;
+}
+
+/* ===========================
+   TEXTOS
+=========================== */
+
+footer p{
+
+    font-family: "Libre Baskerville";
+
+    font-size: .9rem;
+
+    line-height: 1.9;
+
+    color: #D8D1C5;
+
+    transition: .25s ease;
+}
+
+footer p:hover{
+
+    color: #F0E7D5;
+}
+
+/* ===========================
+   REDES SOCIAIS
+=========================== */
+
+footer span{
+
+    display: inline-block;
+
+    margin-right: 12px;
+}
+
+footer span:last-child{
+
+    margin-right: 0;
+}
+
+footer span a{
+
+    display: inline-flex;
+}
+
+footer span img{
+
+    width: 34px;
+    height: 34px;
+
+    object-fit: contain;
+    transition: 1s ease;
+}
+
+footer span img:hover{
+    filter: brightness(2.5);
+   transition: 1s ease;
+}
+
+/* ===========================
+   PRIMEIRA COLUNA
+=========================== */
+
+footer div:first-child p{
+
+    font-style: italic;
+
+    color: #B8B2A7;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width: 768px){
+
+    footer{
+
+        flex-direction: column;
+
+        gap: 35px;
+
+        text-align: center;
+    }
+
+    footer div{
+
+        min-width: 100%;
+    }
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

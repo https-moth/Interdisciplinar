@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="carro.css">
+  <title id="page-title">Carregando... - Vintage Motors</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logotipo"> <img class="logo" src="img/Logo VM.png"> VINTAGE MOTORS</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="estoque.html" id="active">Garagem</a></li>
+        <li><a href="sobre.html">História</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <a href="eventos.html" id="link-clube">
+      <div class="Clube">
+        <img class="clube-logo" src="img/Clube.png" alt="Clube Old Legends">
+        <div class="clube-texto">
+          <span>Seja membro do clube</span>
+          <b>Old Legends</b>
+        </div>
+      </div>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- ==================
+         HERO SPLIT
+    =================== -->
+    <section class="carro-hero">
+
+      <!-- Imagem principal (esquerda) -->
+      <div class="hero-img-wrap">
+        <img
+          class="hero-img"
+          id="hero-img"
+          src="img/carros/placeholder.jpg"
+          alt=""
+        >
+        <!-- Badge de status sobreposto -->
+        <span class="hero-badge" id="hero-badge">Disponível</span>
+        <!-- Breadcrumb sobreposto -->
+        <nav class="hero-breadcrumb" aria-label="Caminho">
+          <a href="index.html">Início</a>
+          <span class="bc-sep">›</span>
+          <a href="estoque.html">Garagem</a>
+          <span class="bc-sep">›</span>
+          <span id="bc-nome">—</span>
+        </nav>
+      </div>
+
+      <!-- Painel de informações rápidas (direita) -->
+      <div class="hero-info">
+        <span class="hero-eyebrow" id="hero-marca">—</span>
+        <h1 class="hero-nome" id="hero-nome">—</h1>
+        <p class="hero-ano" id="hero-ano">—</p>
+
+        <div class="hero-divider"></div>
+
+        <!-- Specs rápidos em grade 2×2 -->
+        <div class="hero-specs-grid">
+          <div class="spec-item">
+            <span class="spec-label">Motor</span>
+            <span class="spec-val" id="spec-motor">—</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Potência</span>
+            <span class="spec-val" id="spec-potencia">—</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Câmbio</span>
+            <span class="spec-val" id="spec-cambio">—</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Cor</span>
+            <span class="spec-val" id="spec-cor">—</span>
+          </div>
+        </div>
+
+        <div class="hero-divider"></div>
+
+        <div class="hero-preco-wrap">
+          <span class="hero-preco-label">Valor estimado</span>
+          <span class="hero-preco" id="hero-preco">Sob consulta</span>
+        </div>
+
+        <div class="hero-cta-wrap">
+          <button class="btn-interesse" id="btn-interesse">
+            Tenho Interesse
+          </button>
+          <button class="btn-carrinho" id="btn-carrinho">
+            + Adicionar à Lista
+          </button>
+        </div>
+      </div>
+
+    </section>
+    
+    <!-- ==================
+         DESCRIÇÃO + HISTÓRIA
+    =================== -->
+    <section class="descricao-section">
+      <div class="descricao-container">
+
+        <!-- Coluna principal: história / descrição longa -->
+        <div class="descricao-col descricao-col--main">
+          <span class="section-eyebrow">✦ O VEÍCULO ✦</span>
+          <h2 class="section-titulo" id="desc-titulo">—</h2>
+          <p class="descricao-texto" id="desc-texto">—</p>
+        </div>
+
+        <!-- Coluna secundária: história de restauração -->
+        <div class="descricao-col descricao-col--sec">
+          <span class="section-eyebrow">✦ RESTAURAÇÃO ✦</span>
+          <h2 class="section-titulo" id="rest-titulo">Estado de Conservação</h2>
+          <p class="descricao-texto" id="rest-texto">—</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================
+         ESPECIFICAÇÕES COMPLETAS
+    =================== -->
+    <section class="specs-section">
+      <div class="specs-header">
+        <span class="section-eyebrow">✦ FICHA TÉCNICA ✦</span>
+        <h2 class="section-titulo claro">Especificações</h2>
+      </div>
+
+      <div class="specs-table-wrap">
+        <table class="specs-table" id="specs-table">
+          <tbody>
+            <!-- Linhas geradas pelo JS.
+                 Estrutura esperada de cada linha:
+                 <tr>
+                   <th scope="row">Rótulo</th>
+                   <td>Valor</td>
+                 </tr>
+            -->
+            <!-- Fallback enquanto o JS não carregou -->
+            <tr class="specs-placeholder">
+              <th scope="row">Motor</th>
+              <td id="ft-motor">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Cilindros</th>
+              <td id="ft-cilindros">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Cilindrada</th>
+              <td id="ft-cilindrada">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Potência</th>
+              <td id="ft-potencia">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Torque</th>
+              <td id="ft-torque">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Câmbio</th>
+              <td id="ft-cambio">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Tração</th>
+              <td id="ft-tracao">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Carroceria</th>
+              <td id="ft-carroceria">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Cor exterior</th>
+              <td id="ft-cor-ext">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Interior</th>
+              <td id="ft-interior">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Número do chassi</th>
+              <td id="ft-chassi">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Quilometragem</th>
+              <td id="ft-km">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================
+         CTA FINAL
+    =================== -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <span class="section-eyebrow">✦ PRÓXIMO PASSO ✦</span>
+        <h2 class="cta-titulo" id="cta-titulo">Interessado neste clássico?</h2>
+        <p class="cta-desc">Nossa equipe está pronta para responder suas dúvidas, agendar uma visita ou iniciar uma negociação. Entre em contato e dê o próximo passo.</p>
+        <div class="cta-btns">
+          <a href="contato.html" class="btn-cta-primario">Entrar em Contato</a>
+          <a href="estoque.html" class="btn-cta-sec">Ver outros clássicos</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <h3>Vintage Motors</h3>
+      <p>Carros Clássicos</p>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <span><a href="https://www.facebook.com" target="_blank"><img class="logo" src="img/Facebook.png" alt="Facebook"></a></span>
+      <span><a href="https://www.instagram.com" target="_blank"><img class="logo" src="img/Instagram.png" alt="Instagram"></a></span>
+      <span><a href="https://www.youtube.com" target="_blank"><img class="logo" src="img/Youtube.png" alt="Youtube"></a></span>
+      <span><a href="https://www.tiktok.com" target="_blank"><img class="logo" src="img/TikTok.png" alt="Tiktok"></a></span>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>Info@vintagemotors.com</p>
+      <p>+55 (53) 9034-3378</p>
+      <p>Av. Nostalgia, 250 - Estocolmo, SE</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="carro.js"></script>
+
+</body>
+
+</html>

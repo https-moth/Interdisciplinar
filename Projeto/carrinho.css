@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #F0E7D5;
+  color: #111;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #F0E7D5;
+}
+
+.logotipo {
+  display: flex;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  font-family: 'Sulphur Point';
+  font-size: 22px;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  /* position: relative; */
+  text-decoration: none;
+  color: #111;
+  font-size: 15px;
+  font-family: 'Libre BaskerViller';
+}
+
+nav a:hover {
+  font-size: 16.5px;
+  color: #730203;
+  transition: 0.5s ease;
+}
+
+#active {
+  font-size: 16.5px;
+  color: #730203;
+  border-bottom: #730203 solid 1px;
+}
+
+/* CARD DO CLUBE */
+
+.Clube {
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: #11114E;
+
+  padding: 18px 22px;
+
+  border-radius: 0 0 18px 18px;
+
+  color: #F0E7D5;
+
+  width: max-content;
+  min-width: 250px;
+
+  align-self: flex-start;
+
+  margin-top: -20px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+}
+
+#link-clube {
+    text-decoration: none;
+}
+
+.clube-logo{
+
+    width:42px;
+    height:42px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+}
+
+.clube-texto{
+
+    display:flex;
+    flex-direction:column;
+
+    line-height:1.2;
+}
+
+.clube-texto span{
+
+    font-family:"Cinzel";
+    font-size:11px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    color:#F0E7D5;
+}
+
+.clube-texto b{
+
+    margin-top:4px;
+
+    color:#DAA520;
+
+    font-family:"Cinzel";
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+/* ========================
+   HERO CARRINHO
+======================== */
+.carrinho-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 280px;
+  padding: 55px 60px 55px 60px;
+  background: #111111;
+  color: white;
+  overflow: hidden;
+}
+
+/* Linha dourada decorativa na base */
+.carrinho-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #DAA520 20%, #DAA520 80%, transparent);
+}
+
+/* Linhas decorativas de fundo */
+.carrinho-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 120px,
+      rgba(218,165,32,0.04) 120px,
+      rgba(218,165,32,0.04) 121px
+    );
+  pointer-events: none;
+}
+
+.carrinho-hero-text {
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+.carrinho-eyebrow {
+  display: block;
+  font-family: 'Cinzel';
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #DAA520;
+  margin-bottom: 16px;
+}
+
+.carrinho-hero-text h1 {
+  font-family: 'Castoro Titling';
+  font-size: 52px;
+  color: #F0E7D5;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.carrinho-hero-text p {
+  font-family: 'Cinzel';
+  font-size: 0.85rem;
+  color: #bbb;
+  line-height: 1.85;
+}
+
+/* Ornamento numérico à direita do hero */
+.carrinho-hero-ornament {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 60px;
+}
+
+.ornament-circle {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid rgba(218,165,32,0.25);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ornament-circle::before {
+  content: '';
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 1px solid rgba(218,165,32,0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ornament-number {
+  font-family: 'Castoro Titling';
+  font-size: 72px;
+  color: #DAA520;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.ornament-label {
+  font-family: 'Cinzel';
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+  text-align: center;
+  margin-top: 8px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================
+   SEÇÃO PRINCIPAL CARRINHO
+======================== */
+.carrinho-section {
+  padding: 60px 60px 80px;
+  background: #F5F1EA;
+}
+
+.carrinho-container {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ========================
+   LISTA DE ITENS
+======================== */
+.carrinho-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ========================
+   CARD ITEM
+======================== */
+.carrinho-item {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(114,75,57,.12);
+  box-shadow: 0 4px 14px rgba(0,0,0,.07);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.carrinho-item:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,.13);
+  border-color: rgba(218,165,32,.4);
+}
+
+/* Imagem do item */
+.carrinho-item-img {
+  position: relative;
+  width: 240px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.carrinho-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.carrinho-item:hover .carrinho-item-img img {
+  transform: scale(1.04);
+}
+
+/* Badge de status — reutilizando os da garagem */
+.car-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: 'Cinzel';
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.car-badge.disponivel {
+  background: #11114E;
+  color: #DAA520;
+  border: 1px solid #DAA520;
+}
+
+.car-badge.reservado {
+  background: #724B39;
+  color: #F0E7D5;
+  border: 1px solid #DAA520;
+}
+
+.car-badge.vendido {
+  background: #333;
+  color: #aaa;
+  border: 1px solid #555;
+}
+
+/* Corpo do item */
+.carrinho-item-info {
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.item-info-top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.item-nome {
+  font-family: 'Cinzel';
+  color: #11114E;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.item-ano {
+  font-family: 'Libre Baskerville';
+  font-size: 0.8rem;
+  color: #DAA520;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.item-desc {
+  font-family: 'Libre Baskerville';
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.65;
+  margin-top: 8px;
+}
+
+/* Rodapé do item: preço + botão remover */
+.item-info-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.item-preco-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item-preco-label {
+  font-family: 'Cinzel';
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.item-preco {
+  font-family: 'Castoro Titling';
+  font-size: 1.35rem;
+  color: #11114E;
+  letter-spacing: 0.5px;
+}
+
+/* Botão remover */
+.btn-remover {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  background: transparent;
+  color: #730203;
+  border: 1.5px solid #730203;
+  border-radius: 6px;
+  font-family: 'Cinzel';
+  font-size: 0.75rem;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-remover:hover {
+  background: #730203;
+  color: #F0E7D5;
+  transform: translateY(-1px);
+}
+
+.btn-remover-icon {
+  font-size: 0.7rem;
+  font-style: normal;
+}
+
+/* BOTÃO VER DETALHES */
+
+.btn-detalhes-item{
+    padding: 10px 22px;
+
+    background: #11114E;
+    color: #F0E7D5;
+
+    border: 2px solid #DAA520;
+    border-radius: 8px;
+
+    font-family: "Cinzel";
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+.btn-detalhes-item:hover{
+    background: #DAA520;
+    color: #11114E;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+}
+
+.btn-detalhes-item:active{
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+.btn-detalhes-item:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(218,165,32,.35);
+}
+
+/* ========================
+   ESTADO VAZIO
+======================== */
+.carrinho-vazio {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 90px 40px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px dashed rgba(114,75,57,.25);
+}
+
+.vazio-icone {
+  font-size: 4rem;
+  color: #DAA520;
+  margin-bottom: 24px;
+  line-height: 1;
+  opacity: 0.6;
+}
+
+.vazio-titulo {
+  font-family: 'Castoro Titling';
+  font-size: 1.8rem;
+  color: #11114E;
+  margin-bottom: 14px;
+}
+
+.vazio-desc {
+  font-family: 'Libre Baskerville';
+  font-size: 0.88rem;
+  color: #777;
+  line-height: 1.75;
+  max-width: 440px;
+  margin-bottom: 34px;
+}
+
+.btn-ir-garagem {
+  display: inline-block;
+  padding: 13px 36px;
+  background: #11114E;
+  color: #F0E7D5;
+  border: 2px solid #DAA520;
+  border-radius: 8px;
+  font-family: 'Cinzel';
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-ir-garagem:hover {
+  background: #DAA520;
+  color: #11114E;
+  transform: translateY(-2px);
+}
+
+/* ========================
+   PAINEL RESUMO (ASIDE)
+======================== */
+.carrinho-resumo {
+  background: #11114E;
+  border-radius: 10px;
+  padding: 30px 28px;
+  border: 1px solid rgba(218,165,32,.2);
+  box-shadow: 0 8px 24px rgba(0,0,0,.14);
+  position: sticky;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.resumo-header {
+  margin-bottom: 28px;
+}
+
+.resumo-eyebrow {
+  display: block;
+  font-family: 'Cinzel';
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  color: #DAA520;
+  margin-bottom: 10px;
+}
+
+.resumo-titulo {
+  font-family: 'Castoro Titling';
+  font-size: 1.5rem;
+  color: #F0E7D5;
+  line-height: 1.1;
+}
+
+.resumo-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.resumo-chave {
+  font-family: 'Cinzel';
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #9b9fc0;
+}
+
+.resumo-valor {
+  font-family: 'Libre Baskerville';
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #F0E7D5;
+}
+
+.resumo-divider {
+  height: 1px;
+  background: rgba(218,165,32,.2);
+  margin: 6px 0;
+}
+
+.resumo-total-linha {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 0;
+}
+
+.resumo-total-chave {
+  color: #9b9fc0;
+}
+
+.resumo-total-valor-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.resumo-consulta {
+  font-family: 'Cinzel';
+  font-size: 0.6rem;
+  color: rgba(218,165,32,.6);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.resumo-total {
+  font-family: 'Castoro Titling';
+  font-size: 1.4rem;
+  color: #DAA520;
+  letter-spacing: 0.5px;
+}
+
+/* Nota informativa */
+.resumo-nota {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: rgba(255,255,255,.05);
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin: 18px 0 24px;
+  border-left: 2px solid rgba(218,165,32,.4);
+}
+
+.nota-icone {
+  font-size: 0.85rem;
+  color: #DAA520;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.resumo-nota p {
+  font-family: 'Libre Baskerville';
+  font-size: 0.72rem;
+  color: #9b9fc0;
+  line-height: 1.65;
+}
+
+/* Botão finalizar */
+.btn-finalizar {
+  width: 100%;
+  padding: 15px 20px;
+  background: #DAA520;
+  color: #11114E;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Cinzel';
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-bottom: 16px;
+}
+
+.btn-finalizar:hover {
+  background: #F0E7D5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(218,165,32,.25);
+}
+
+/* Link continuar explorando */
+.resumo-link-continuar {
+  display: block;
+  text-align: center;
+  font-family: 'Cinzel';
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  color: #9b9fc0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resumo-link-continuar:hover {
+  color: #DAA520;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+  background: #111111;
+  color: #F0E7D5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 45px 70px;
+  border-top: 3px solid #DAA520;
+}
+
+footer div {
+  flex: 1;
+  min-width: 220px;
+}
+
+footer h3,
+footer h4 {
+  font-family: "Cinzel";
+  font-weight: 700;
+  color: #DAA520;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+footer h3 { font-size: 1.6rem; }
+footer h4 { font-size: 1.15rem; }
+
+footer p {
+  font-family: "Libre Baskerville";
+  font-size: .9rem;
+  line-height: 1.9;
+  color: #D8D1C5;
+  transition: .25s ease;
+}
+
+footer p:hover { color: #F0E7D5; }
+
+footer span {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+footer span:last-child { margin-right: 0; }
+
+footer span a { display: inline-flex; }
+
+footer span img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  transition: 1s ease;
+}
+
+footer span img:hover {
+  filter: brightness(2.5);
+}
+
+footer div:first-child p {
+  font-style: italic;
+  color: #B8B2A7;
+}
+
+/* ========================
+   RESPONSIVO
+======================== */
+@media (max-width: 1100px) {
+  .carrinho-container {
+    grid-template-columns: 1fr 280px;
+    gap: 28px;
+  }
+
+  .carrinho-item-img {
+    width: 190px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 30px;
+  }
+
+  .carrinho-hero {
+    flex-direction: column;
+    min-height: auto;
+    padding: 50px 30px 40px;
+    text-align: center;
+    gap: 36px;
+  }
+
+  .carrinho-hero-text {
+    max-width: 100%;
+  }
+
+  .carrinho-section {
+    padding: 40px 24px 60px;
+  }
+
+  .carrinho-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Resumo vai para o topo em mobile */
+  .carrinho-resumo {
+    order: -1;
+    position: static;
+  }
+
+  .carrinho-item {
+    flex-direction: column;
+  }
+
+  .carrinho-item-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+  }
+
+  footer div { min-width: 100%; }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .carrinho-hero-text h1 {
+    font-size: 38px;
+  }
+
+  .item-preco {
+    font-size: 1.1rem;
+  }
+
+  .item-info-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .btn-remover {
+    align-self: flex-start;
+  }
+}

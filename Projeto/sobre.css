@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #F0E7D5;
+  color: #111;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #F0E7D5;
+}
+
+.logotipo {
+  display: flex;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  font-family: 'Sulphur Point';
+  font-size: 22px;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  /* position: relative; */
+  text-decoration: none;
+  color: #111;
+  font-size: 15px;
+  font-family: 'Libre BaskerViller';
+}
+
+nav a:hover {
+  font-size: 16.5px;
+  color: #730203;
+  transition: 0.5s ease;
+}
+
+#active {
+  font-size: 16.5px;
+  color: #730203;
+  border-bottom: #730203 solid 1px;
+}
+
+/* CARD DO CLUBE */
+
+.Clube {
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: #11114E;
+
+  padding: 18px 22px;
+
+  border-radius: 0 0 18px 18px;
+
+  color: #F0E7D5;
+
+  width: max-content;
+  min-width: 250px;
+
+  align-self: flex-start;
+
+  margin-top: -20px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+}
+
+#link-clube {
+    text-decoration: none;
+}
+
+.clube-logo{
+
+    width:42px;
+    height:42px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+}
+
+.clube-texto{
+
+    display:flex;
+    flex-direction:column;
+
+    line-height:1.2;
+}
+
+.clube-texto span{
+
+    font-family:"Cinzel";
+    font-size:11px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    color:#F0E7D5;
+}
+
+.clube-texto b{
+
+    margin-top:4px;
+
+    color:#DAA520;
+
+    font-family:"Cinzel";
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+
+/* ========================
+   BANNER / HERO
+======================== */
+.banner-inicio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 520px;
+  padding-left: 60px;
+  background: #111111;
+  color: white;
+  overflow: hidden;
+}
+
+.inicio-text {
+  max-width: 480px;
+  z-index: 2;
+}
+
+.banner-eyebrow {
+  display: block;
+  font-family: 'Cinzel';
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #DAA520;
+  margin-bottom: 16px;
+}
+
+.inicio-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: 'Castoro Titling';
+}
+
+.inicio-text p {
+  margin-bottom: 20px;
+  color: #ddd;
+  font-family: 'Cinzel';
+}
+
+.banner-inicio img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.15) 6%, rgba(0,0,0,.45) 12%, rgba(0,0,0,.85) 20%, black 28%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.15) 6%, rgba(0,0,0,.45) 12%, rgba(0,0,0,.85) 20%, black 28%);
+}
+
+/* ========================
+   SEÇÃO HISTÓRIA
+======================== */
+.história {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 60px;
+  background: #F5F1EA;
+}
+
+.história img {
+  width: 44%;
+  max-width: 480px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+  box-shadow: 0 12px 35px rgba(0,0,0,.18);
+}
+
+.história div {
+  flex: 1;
+}
+
+.história h2 {
+  font-family: 'Castoro Titling';
+  font-size: 2rem;
+  color: #11114E;
+  margin-bottom: 22px;
+  line-height: 1.3;
+}
+
+.história p {
+  font-family: 'Libre Baskerville';
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.9;
+}
+
+/* ========================
+   TIMELINE
+======================== */
+.timeline {
+  padding: 70px 60px;
+  background: #F0E7D5;
+  text-align: center;
+}
+
+.timeline h2 {
+  font-family: 'Castoro Titling';
+  font-size: 1.8rem;
+  color: #11114E;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.timeline h2::before,
+.timeline h2::after {
+  content: '✦';
+  color: #DAA520;
+  font-size: 0.9rem;
+  margin: 0 14px;
+  vertical-align: middle;
+}
+
+.timeline-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* linha conectora */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(to right, #fad26e, #ecbc41, #DAA520, #DAA520, #DAA520, #B8860B, #DAA520, #DAA520, #DAA520, #ecbc41,  #fad26e);
+  z-index: 0;
+}
+
+.ponto-tempo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 180px;
+  position: relative;
+  z-index: 1;
+}
+
+.icone-tempo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  background: #11114E;
+  border-radius: 50%;
+  padding: 12px;
+  border: 2px solid #DAA520;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.2);
+}
+
+.ponto-tempo h3 {
+  font-family: 'Cinzel';
+  font-size: 1rem;
+  font-weight: 700;
+  color: #11114E;
+  margin-bottom: 6px;
+}
+
+.ponto-tempo p {
+  font-family: 'Libre Baskerville';
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ========================
+   VALORES
+======================== */
+.valores {
+  padding: 70px 60px;
+  background: #F5F1EA;
+  text-align: center;
+}
+
+.valores h2 {
+  font-family: 'Castoro Titling';
+  font-size: 1.8rem;
+  color: #11114E;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.valores h2::before,
+.valores h2::after {
+  content: '✦';
+  color: #DAA520;
+  font-size: 0.9rem;
+  margin: 0 14px;
+  vertical-align: middle;
+}
+
+.valores-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.valor-caixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 22px;
+  background: #F0E7D5;
+  border-radius: 4px;
+  border: 1px solid rgba(218,165,32,.25);
+  transition: 0.3s ease;
+}
+
+.valor-caixa:hover {
+  transform: translateY(-5px);
+  border-color: #DAA520;
+  box-shadow: 0 10px 28px rgba(0,0,0,.1);
+}
+
+.valor-icone {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  margin-bottom: 18px;
+  filter: sepia(1) saturate(3) hue-rotate(5deg) brightness(0.75);
+}
+
+.valor-caixa h3 {
+  font-family: 'Cinzel';
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #11114E;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.valor-caixa p {
+  font-family: 'Libre Baskerville';
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ========================
+   RESULTADO
+======================== */
+.resultado {
+  padding: 70px 60px;
+  background: #11114E;
+  text-align: center;
+}
+
+.resultado h2 {
+  font-family: 'Castoro Titling';
+  font-size: 1.8rem;
+  color: #F0E7D5;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.resultado h2::before,
+.resultado h2::after {
+  content: '✦';
+  color: #DAA520;
+  font-size: 0.9rem;
+  margin: 0 14px;
+  vertical-align: middle;
+}
+
+.resultado-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.resultado-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+  border: 1px solid rgba(218,165,32,.3);
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.resultado-item:hover {
+  border-color: #DAA520;
+  background: rgba(218,165,32,.06);
+}
+
+.resultado-icone {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  filter: brightness(0) saturate(100%) invert(73%) sepia(69%) saturate(392%) hue-rotate(4deg) brightness(95%) contrast(91%);
+}
+
+.resultado-item h3 {
+  font-family: 'Castoro Titling';
+  font-size: 2.4rem;
+  color: #DAA520;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.resultado-item p {
+  font-family: 'Cinzel';
+  font-size: 0.72rem;
+  color: #C8C0B5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+  background: #111111;
+  color: #F0E7D5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 45px 70px;
+  border-top: 3px solid #DAA520;
+}
+
+footer div {
+  flex: 1;
+  min-width: 220px;
+}
+
+footer h3,
+footer h4 {
+  font-family: "Cinzel";
+  font-weight: 700;
+  color: #DAA520;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+footer h3 {
+  font-size: 1.6rem;
+}
+
+footer h4 {
+  font-size: 1.15rem;
+}
+
+footer p {
+  font-family: "Libre Baskerville";
+  font-size: .9rem;
+  line-height: 1.9;
+  color: #D8D1C5;
+  transition: .25s ease;
+}
+
+footer p:hover {
+  color: #F0E7D5;
+}
+
+footer span {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+footer span:last-child {
+  margin-right: 0;
+}
+
+footer span a {
+  display: inline-flex;
+}
+
+footer span img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  transition: 1s ease;
+}
+
+footer span img:hover {
+  filter: brightness(2.5);
+  transition: 1s ease;
+}
+
+footer div:first-child p {
+  font-style: italic;
+  color: #B8B2A7;
+}
+
+/* ========================
+   RESPONSIVO
+======================== */
+@media (max-width: 1100px) {
+  .valores-container,
+  .resultado-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 30px;
+  }
+
+  .banner-inicio {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .banner-inicio img {
+    display: none;
+  }
+
+  .história {
+    flex-direction: column;
+    padding: 50px 30px;
+    gap: 36px;
+  }
+
+  .história img {
+    width: 100%;
+    max-width: 100%;
+    height: 280px;
+  }
+
+  .timeline {
+    padding: 50px 20px;
+  }
+
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .timeline-container::before {
+    display: none;
+  }
+
+  .valores {
+    padding: 50px 30px;
+  }
+
+  .resultado {
+    padding: 50px 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+  }
+
+  footer div {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .valores-container,
+  .resultado-container {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .inicio-text h1 {
+    font-size: 38px;
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="carrinho.css">
+  <title>Carrinho - Vintage Motors</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logotipo"> <img class="logo" src="img/Logo VM.png"> VINTAGE MOTORS</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="estoque.html">Garagem</a></li>
+        <li><a href="sobre.html">História</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <a href="eventos.html" id="link-clube">
+      <div class="Clube">
+        <img class="clube-logo" src="img/Clube.png" alt="Clube Old Legends">
+        <div class="clube-texto">
+          <span>Seja membro do clube</span>
+          <b>Old Legends</b>
+        </div>
+      </div>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO CARRINHO -->
+    <section class="carrinho-hero">
+      <div class="carrinho-hero-text">
+        <span class="carrinho-eyebrow">✦ SEU INTERESSE ✦</span>
+        <h1>Minha Lista</h1>
+        <p>Os clássicos que despertaram sua atenção. Revise sua seleção e entre em contato para dar o próximo passo.</p>
+      </div>
+      <div class="carrinho-hero-ornament">
+        <div class="ornament-circle"></div>
+        <div class="ornament-number" id="hero-count">0</div>
+        <div class="ornament-label">veículos<br>selecionados</div>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <section class="carrinho-section">
+      <div class="carrinho-container">
+
+        <!-- LISTA DE VEÍCULOS -->
+        <div class="carrinho-lista" id="carrinho-lista">
+
+        </div>
+        <!-- fim #carrinho-lista -->
+
+        <!-- ESTADO VAZIO — oculto por padrão, ativado via JS -->
+        <div class="carrinho-vazio" id="carrinho-vazio" style="display:none;">
+          <div class="vazio-icone">⊙</div>
+          <h2 class="vazio-titulo">Sua lista está vazia</h2>
+          <p class="vazio-desc">Ainda não há veículos aqui. Explore nossa Garagem e adicione os clássicos que despertam seu interesse.</p>
+          <a href="estoque.html" class="btn-ir-garagem">Explorar Garagem</a>
+        </div>
+
+        <!-- PAINEL LATERAL / RESUMO -->
+        <aside class="carrinho-resumo" id="carrinho-resumo">
+          <div class="resumo-header">
+            <span class="resumo-eyebrow">✦ RESUMO ✦</span>
+            <h2 class="resumo-titulo">Sua Seleção</h2>
+          </div>
+
+          <div class="resumo-linha">
+            <span class="resumo-chave">Veículos selecionados</span>
+            <span class="resumo-valor" id="resumo-qtd">3</span>
+          </div>
+
+          <div class="resumo-divider"></div>
+
+          <div class="resumo-linha resumo-total-linha">
+            <span class="resumo-chave resumo-total-chave">Valor estimado total</span>
+            <div class="resumo-total-valor-wrap">
+              <span class="resumo-consulta">Sujeito à negociação</span>
+              <span class="resumo-valor resumo-total" id="resumo-total">R$ 2.350.000</span>
+            </div>
+          </div>
+
+          <div class="resumo-divider"></div>
+
+          <div class="resumo-nota">
+            <span class="nota-icone">ℹ</span>
+            <p>Os valores exibidos são estimativas. Condições e forma de pagamento são definidas diretamente com nossa equipe.</p>
+          </div>
+
+          <button class="btn-finalizar" id="btn-finalizar">
+            Solicitar Contato
+          </button>
+
+          <a href="estoque.html" class="resumo-link-continuar">← Continuar explorando</a>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <h3>Vintage Motors</h3>
+      <p>Carros Clássicos</p>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <span><a href="https://www.facebook.com" target="_blank"><img class="logo" src="img/Facebook.png" alt="Facebook"></a></span>
+      <span><a href="https://www.instagram.com" target="_blank"><img class="logo" src="img/Instagram.png" alt="Instagram"></a></span>
+      <span><a href="https://www.youtube.com" target="_blank"><img class="logo" src="img/Youtube.png" alt="Youtube"></a></span>
+      <span><a href="https://www.tiktok.com" target="_blank"><img class="logo" src="img/TikTok.png" alt="Tiktok"></a></span>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>Info@vintagemotors.com</p>
+      <p>+55 (53) 9034-3378</p>
+      <p>Av. Nostalgia, 250 - Estocolmo, SE</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="carrinho.js"></script>
+
+</body>
+
+</html>
