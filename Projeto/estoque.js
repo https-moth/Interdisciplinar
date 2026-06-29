@@ -117,40 +117,6 @@ function renderizarPaginacao() {
 }
 
 // ─────────────────────────────────────────────
-// FILTROS
-// ─────────────────────────────────────────────
-function aplicarFiltros() {
-  const busca = document.getElementById('search-input').value.toLowerCase().trim();
-  const marca = document.getElementById('filtro-marca').value;
-  const decada = document.getElementById('filtro-decada').value;
-  const status = document.getElementById('filtro-status').value;
-
-  carrosFiltrados = CARROS.filter(c => {
-    const buscaOk = !busca ||
-      c.nome.toLowerCase().includes(busca) ||
-      c.marca.toLowerCase().includes(busca) ||
-      String(c.ano).includes(busca);
-    const marcaOk = !marca || c.marca === marca;
-    const decadaOk = !decada || c.decada === parseInt(decada);
-    const statusOk = !status || c.status === status;
-    return buscaOk && marcaOk && decadaOk && statusOk;
-  });
-
-  paginaAtual = 1;
-  renderizarGrid();
-}
-
-function limparFiltros() {
-  document.getElementById('search-input').value = '';
-  document.getElementById('filtro-marca').value = '';
-  document.getElementById('filtro-decada').value = '';
-  document.getElementById('filtro-status').value = '';
-  carrosFiltrados = [...CARROS];
-  paginaAtual = 1;
-  renderizarGrid();
-}
-
-// ─────────────────────────────────────────────
 // INIT
 // ─────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
